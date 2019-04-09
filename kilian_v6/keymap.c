@@ -6,15 +6,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[2] = LAYOUT(RESET, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_7, KC_8, KC_9, KC_NO, KC_NO, KC_ESC, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_4, KC_5, KC_6, KC_NO, KC_NO, KC_LSFT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_0, KC_1, KC_2, KC_3, KC_NO, KC_RSFT, KC_LCTL, KC_NO, KC_NO, KC_LALT, KC_LGUI, KC_BSPC, KC_DEL, KC_ENT, KC_SPC, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_RALT),
 	[3] = LAYOUT(KC_NO, KC_F13, KC_F14, KC_F15, KC_F16, KC_F17, KC_F20, KC_F21, KC_F22, KC_F23, KC_F24, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_F18, KC_F19, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_ESC, KC_INS, KC_SLCK, KC_PAUS, KC_CAPS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LSFT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_RSFT, KC_LCTL, KC_NO, KC_TRNS, KC_LALT, KC_LGUI, KC_BSPC, KC_DEL, KC_ENT, KC_SPC, KC_NO, KC_NO, KC_NO, KC_NO, KC_RALT)
 };
-
-void matrix_scan_user(void) {
-    uint8_t layer = biton32(layer_state);
-    switch (layer) {
-        case 2:
-            set_led_blue;
-            break;
-        default:
-            break;
-    }
-};
-
