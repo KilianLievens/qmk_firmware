@@ -7,14 +7,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[3] = LAYOUT(KC_NO, KC_F13, KC_F14, KC_F15, KC_F16, KC_F17, KC_F20, KC_F21, KC_F22, KC_F23, KC_F24, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_F18, KC_F19, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_INS, KC_SLCK, KC_PAUS, KC_CAPS, KC_APP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_TRNS)
 };
 
-void matrix_scan_user(void) {
-    uint8_t layer = biton32(layer_state);
-    switch (layer) {
-        case 2:
-            set_led_blue;
-            break;
-        default:
-            break;
-    }
-};
+// void matrix_scan_user(void) {
+//     uint8_t layer = biton32(layer_state);
+//     switch (layer) {
+//         case 2:
+//             set_led_blue;
+//             break;
+//         default:
+//             break;
+//     }
+// };
 
